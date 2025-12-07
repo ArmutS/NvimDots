@@ -30,6 +30,13 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
+
+vim.keymap.set("n", "<leader>ww", ":w <CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>wq", ":wq <CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>qq", ":q! <CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>qa", ":qa <CR>", { noremap = true, silent = true })
+
+
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>fg", ":FzfLua live_grep<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>fb", ":FzfLua buffers<CR>", { noremap = true, silent = true })
@@ -48,3 +55,5 @@ end)
 vim.keymap.set("n", "<Leader>dt", function()
 	require("dap").toggle_breakpoint()
 end)
+
+vim.keymap.set("n", "<leader>ee", ":Oil<CR>", { desc = "Open parent directory" })
