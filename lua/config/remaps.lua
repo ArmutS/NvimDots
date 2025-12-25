@@ -35,6 +35,11 @@ vim.keymap.set("n", "<leader>ww", ":w <CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>wq", ":wq <CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>qq", ":q! <CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>qa", ":qa <CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>tt", ":terminal <CR>", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>nn", ":bprevious<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>bb", ":bnext<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<leader>sw", ":vsplit<CR>", {noremap = true, silent = true})
 
 
 vim.keymap.set("n", "<leader>ff", ":FzfLua files<CR>", { noremap = true, silent = true })

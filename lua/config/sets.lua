@@ -1,3 +1,4 @@
+vim.cmd("colorscheme everforest")
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
